@@ -6,15 +6,14 @@ Container: its thin layer of OS
 its not like full blone OS 
 
 ## Deploy nodejs application 
-   1. VM
+   1. VM 
    2. Container 
 
 
 docker run -it node:16-alpine /bin/bash 
 
-COPY package.json package-lock.json ./
 
-d997a44a10de 
+ 
 
 docker cp package.json package-lock.json d997a44a10de:/app
 
