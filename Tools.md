@@ -96,10 +96,12 @@
 1. Linux and Windows ubuntu and centos 
 2. Shell Script, Power Shell and Python 
 
-## Cloud
-security 
-cost effective
-performance 
+## CloudOperation Engineer
+
+1. performance 
+2. security 
+3. cost effective ---> trustadvisor 
+ 
 
 ## Building blocks
 1. Compute 
@@ -146,5 +148,6 @@ performance
     
 
 
-
+```
     A running container uses an isolated filesystem. This isolated filesystem is provided by an image, and the image must contain everything needed to run an application - all dependencies, configurations, scripts, binaries, etc.
+```
