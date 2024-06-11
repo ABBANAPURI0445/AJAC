@@ -1,0 +1,8 @@
+1. write dockerfile for jenkins
+```
+FROM openjdk:17 
+COPY jenkins.war .
+CMD ["java","-jar","jenkins.war"] 
+```
+2. build the Image ```docker image build -t jenkins .```
+3. run container ```docker run -d -p 8080:8080 jenkins```

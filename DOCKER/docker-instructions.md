@@ -110,3 +110,8 @@ RUN apt-get install java -y
 RUN apt-get install tomcat -y
 CMD or ENTRYPOINT 
 ```
+
+## diff b/w RUN and CMD/ENTRYPOINT
+1. RUN and CMD/ENTRYPOINT both are used for executing the commands
+2. RUN executing while building the Image
+3. CMD/ENTRYPOINT executing while creating the container 

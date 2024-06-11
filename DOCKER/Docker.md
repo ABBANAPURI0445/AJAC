@@ -41,3 +41,16 @@ Reference:  https://betterstack.com/community/guides/scaling-nodejs/dockerize-no
 1. write Dockerfile 
 2. build docker image
 3. and run the container 
+
+## Delete the all containers
+```docker rm -f $(docker ps -a)```
+and
+```docker rm -f $(docker ps)```
+## Delete the all images
+```docker rmi -f $(docker images)``` or ```docker prune```
+
+## Docker create and docker start
+1. docker create only create the container, it will not start by deafult 
+2. you  need to start it 
+```docker create image``` and   ```docker start -d -P <cid>``` 
+3. docker run combination of both(docker create + docker start)
