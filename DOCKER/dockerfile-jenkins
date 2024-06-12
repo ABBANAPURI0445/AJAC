@@ -6,3 +6,9 @@ CMD ["java","-jar","jenkins.war"]
 ```
 2. build the Image ```docker image build -t jenkins .```
 3. run container ```docker run -d -p 8080:8080 jenkins```
+
+```
+FROM openjdk:17 
+ADD https://updates.jenkins.io/download/war/2.462/jenkins.war .
+CMD ["java","-jar","jenkins.war"] 
+```

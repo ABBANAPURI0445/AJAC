@@ -43,7 +43,7 @@ Reference:  https://betterstack.com/community/guides/scaling-nodejs/dockerize-no
 3. and run the container 
 
 ## Delete the all containers
-```docker rm -f $(docker ps -a)```
+```docker rm -f $(docker ps -aq)```
 and
 ```docker rm -f $(docker ps)```
 ## Delete the all images
