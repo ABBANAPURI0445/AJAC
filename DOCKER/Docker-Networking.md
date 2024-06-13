@@ -1,23 +1,4 @@
-
-## Tomcat base image 
-
-"sha256:0b9c994b0484c0bc61f9de7c28a58745a504704254c5e8ed12349ebee3393a66",
-"sha256:72e30882eacad0e18bc3fa7f2260667dd86b9f6f880a674f9313b30c75aad21c",
-"sha256:561765593607d71e01565e7a6102d6452591bee9c3297e3223ca783a5392c5db",
-"sha256:fe43bb88bf8cec55e96cc404b2873827d87fdb6938158802d039369697cd77e9",
-"sha256:6cd52dea7d360e1716f6d408de57d18b871de517a44bd848f2d92508c3ba7fa6",
-"sha256:25ad393fe985150cd7f4e02440719cf409250599d4c4e8017084a43eb666dc9d",
-"sha256:a070082a11aba89c3952126ddbd36f0b987cdde14baee7ed99798466f37f12b7",
-"sha256:775ff0991eb769a3a6698999e69b06f5c8a3b5edd20428d9c6467d8e8edf7120"
-
-## create a container 
-
-
-172.17.0.2   alpine1 
-172.17.0.3  alpine2 
-
-
-Obs: default network: if you use default bridge DNS doesnt work 
+```Obs: default network: if you use default bridge DNS doesnt work```
 ## alpine: 
   1. ping google.com ---> working 
   2. ping using IP address (container A to container B ---> ```ping 172.17.0.3``` ===> contected )
@@ -41,4 +22,18 @@ Obs: default network: if you use default bridge DNS doesnt work
     1. ```ping google.com``` = Passed 
     2. ```ping 192.168.0.2```  = Passed 
     3. ```ping alpine3``` = Passed  
+
+## Docker Network 
+1. Docker provides several types of networks
+   1. Bridge Network ---> Single Docker host(Machine where we installed docker)
+   2. Host Network   --> it used Docker host network
+   3. Overlay network  ---> Multi-docker host(Docker swarm and Kuberntes) 
+   4. Macvlan Network  --> 
+   5. None Network  ---> disable container network 
+
+
+
+## Container
+1. Namespace ---> its all about Isolation, process isolation, user/group Isolation, network Isolation 
+2. Control groups(C Groups)  ---> its all about resource, cpu, ram, storage, you can put restrictions on resource quota
    
