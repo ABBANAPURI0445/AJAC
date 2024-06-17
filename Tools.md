@@ -151,3 +151,13 @@
 ```
     A running container uses an isolated filesystem. This isolated filesystem is provided by an image, and the image must contain everything needed to run an application - all dependencies, configurations, scripts, binaries, etc.
 ```
+
+
+
+## use reserved instance 3(full pay) -  (ec2 machine and RDS) instead of on-demand -- 70% 60% 
+## ALB and EBS Voulmes and old snapshots 
+## trusted advisor 
+    1. cost
+    2. security
+    3. network
+

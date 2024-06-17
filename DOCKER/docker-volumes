@@ -1,4 +1,4 @@
-## Docker Volumes
+## Docker Volumes 
 1. docker containers are ephemeral(temporary- not permenent), it might crash or delete in sometime the reason could be anything -- overload, cpu stretch, OOM(out of memory) if container crash you'r application generated data and app log data will be loss
 2. docker voulmes persist container data even after removing the container.
 3. types of docker volumes
@@ -7,7 +7,9 @@
       2. create container with volume ```docker container run -d --name namedvolumeC --mount source=named-volume,target=/usr/locat/tomcat tomcat```
       3. create directory in docker container ```docker exec -it <cid> /bin/sh```
    once you get into the container create directory and file ```mkdir test-namedvolume``` and do ```vi namevolume``` and add some content 
-      4. goto ec2 machine and do cd ```cd /var/lib/docker/volume/namedvolume```
+      4. goto ec2 machine and do cd ```cd /var/lib/docker/volume/namedvolume``` and verify the data.
  
-         1. Bind mount 
-   2. tmpfs: the data persist in RAM 
+   2. Bind mount 
+       1. you can mount whereever you want
+       2. docker container run -d --name bind-aws --mount source=credentials,target=/root/.aws tomcat-aws
+   3. tmpfs: the data persist in RAM 
