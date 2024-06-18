@@ -11,5 +11,5 @@
  
    2. Bind mount 
        1. you can mount whereever you want
-       2. docker container run -d --name bind-aws --mount source=credentials,target=/root/.aws tomcat-aws
+       2. ```docker container run -d --name bind-aws --mount tyep=bind,source="",target=/root/.aws tomcat-aws```
    3. tmpfs: the data persist in RAM 
