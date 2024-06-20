@@ -115,3 +115,6 @@ CMD or ENTRYPOINT
 1. RUN and CMD/ENTRYPOINT both are used for executing the commands
 2. RUN executing while building the Image
 3. CMD/ENTRYPOINT executing while creating the container 
+
+## Docker restart policy 
+[clickhere](https://docs.docker.com/config/containers/start-containers-automatically/)

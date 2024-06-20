@@ -7,7 +7,7 @@
     4. add triggers(when do you want trigger) -- Event bridge(cron) 
 3. push Image to ECR/ACR.
 4. RDS creation: 
-   1. deploy RDS/ Azure SQL 
+   1. deploy RDS/ Azure SQL
    2. map DNS record in Route53/private DNS(private endpoint)
    3. install mysql workbench 
    4. connect to the RDS via Mysql Work bench 
