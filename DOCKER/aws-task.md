@@ -15,6 +15,7 @@
 5. Install SSM agent using Ansible Playbook 
 6. load data from s3 to aurora mysql RDS Cluster using Lambda
     1. Tools: S3, SNS, Lambda(python-boto3)
+7. 
    
 
 
