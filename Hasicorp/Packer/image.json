@@ -1,0 +1,18 @@
+{
+    "builders": [
+      {
+        "type": "amazon-instance",
+        "region": "us-east-1",
+        "source_ami": "ami-08a0d1e16fc3f61ea",
+        "instance_type": "t2.micro",
+        "ssh_username": "ec2-user",
+        "ami_name": "packer-example-{{timestamp}}"
+      }
+    ],
+    "provisioners": [
+        {
+            "type": "shell",
+            "inline": ["sudo apt update","sudo apt install tomcat9 -y","sudo apt install apache2"]
+        }
+    ]
+  }

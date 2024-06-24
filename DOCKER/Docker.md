@@ -54,3 +54,26 @@ and
 2. you  need to start it 
 ```docker create image``` and   ```docker start -d -P <cid>``` 
 3. docker run combination of both(docker create + docker start)
+
+
+## Docker Disadvaatges
+1. No Self Healing
+2. No Autoscaling 
+3. No Loadbalancer 
+4. Not meant for Large number of workloads
+5. Not support Mutli-Host Networking
+6. No Persistent Storage 
+
+If you want Overcome above challenges then go to COE(Container Orchestartion Engine)
+COE:
+  1. Kubernetes -- k8s  --> 90%
+  2. Apache mesos
+  3. Docker Swarm 
+
+
+
+## Docker Responsiblity
+1. Dockerfile
+2. Build Image
+3. Push To Registery
+4. Deploying into Kubernetes using Manifest file
