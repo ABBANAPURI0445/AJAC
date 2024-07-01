@@ -11,5 +11,15 @@
    2. Worker Node Components
        1. Kubelet: its Agent run on every node in the cluster, its ensure containers running in the Pod and send reports to control plane
        2. Kube-Proxy
-       3. Container Run Time(continerD) 
-       4. 
+       3. Container Run Time(continerD, Docker Engine) 
+
+## K8s Cluster:
+  1. Bare metal: You need to do from the scratch
+  2. Mini-kube: single node k8s cluster
+  3. Kubeadm: single control plane and multi-node, Multi-control plane and multi-node
+  4. Kube-spray: single control plane and multi-node, Multi-control plane and multi-node
+  5. EKS(Elastic Kubernetes Service)-AWS PAAS
+  6. AKS(Azure Kubernetes Service)- AZURE PASS
+  7. GKE(Google Kuberntes Engine)- GCP PAAS
+
+## Ports Info [ports](https://kubernetes.io/docs/reference/networking/ports-and-protocols/)
