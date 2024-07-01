@@ -61,7 +61,7 @@ and
 2. No Autoscaling 
 3. No Loadbalancer 
 4. Not meant for Large number of workloads
-5. Not support Mutli-Host Networking
+5. Not support Mutli-Host Networking 
 6. No Persistent Storage 
 
 If you want Overcome above challenges then go to COE(Container Orchestartion Engine)
