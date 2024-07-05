@@ -9,10 +9,16 @@
    5. restore db with mysql 8 (don't forget to select cluster parameter group and db parameter group)
    6. check the status of the version(if it fail check the error logs and troubleshoot it)
    7. do restore again. 
+   8. Note: 
+        1. After 1 hr check the Version
+        2. pre-upgrade check and error log file 
+   9. Goto Route53 and update the current database dns records 
 2. Install Kubeadm (one Master node and 2 worker nodes)
    1. run below commands
       ```
       kubectl get nodes
       kubectl get pods -A
       kubectl get pods --namespace kube-system
-     ```
+     ``` 
+
+3. Flyway Database Migration Tool 

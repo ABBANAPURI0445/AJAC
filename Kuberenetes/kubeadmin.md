@@ -43,3 +43,10 @@
 
   ## Apply Pod Network
   kubectl apply -f https://reweave.azurewebsites.net/k8s/v1.30/net.yaml
+
+  ## Kubectl commands
+  1. kubectl get nodes
+  2. kubectl get pods -A
+  3. kubectl get pods --namespace kube-system
+  4. kubectl get namespace 
+  
