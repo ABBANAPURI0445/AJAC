@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ReplicationController
+metadata: 
+  name: appserver
+  labels: 
+    app: tomcat
+spec: 
+  selector: 
+    app: tomcat
+  

@@ -16,3 +16,7 @@
 2. Build Docker Image
 3. Push to ECR Registry 
 4. Use Image in Pod Manifest  
+
+
+## Commands
+1. kubectl delete pod podname 
