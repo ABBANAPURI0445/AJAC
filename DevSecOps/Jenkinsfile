@@ -4,7 +4,7 @@ node('maven') {
     git 'https://github.com/ABBANAPURI0445/game-of-life.git'
 }
 // add compile stage
-// add snyk stage
+// add snyk stage     
  stage('Build') {
     // build java source code using maven build tool mvn compile + mvn test + mvn package
     sh label: '', script: 'mvn package'
@@ -17,6 +17,7 @@ node('maven') {
      // store artifact in local machine or shared folder
   archive 'gameoflife-web/target/gameoflife.war'
  }*/
+ /// Take Docker container 
  stage('Static Code analysis'){
        // performing sonarqube analysis with "withSonarQubeENV(<Name of Server configured in Jenkins>)"
     withSonarQubeEnv('sonar') {
