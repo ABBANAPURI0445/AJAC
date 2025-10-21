@@ -12,7 +12,7 @@ provider "azurerm" {
   features {}
   ## default Az login
 }
-resource "azurerm_resource_group" "rg" {
+resource "azurerm_resource_group" "rgvm" {
   name     = "dev-azureterraformpractice-rg"
   location = "East US"
 }
